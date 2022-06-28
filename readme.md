@@ -1,0 +1,9 @@
+El plan a grandes rasgos es ir documentando todo el aprendizaje recorrido en la academia freeCodeCamp, para plazmar el aprendizaje adquirido, y el resultado de estos mediante proyectos en un momento determinado de mi camino como estudiante y futuro profesional.
+
+Este proyecto va a ser un componente importante en mi portafolio personal. El cual tendrà un formato standar en cuanto a diseño y la informacion que muestra. El hecho de que el portafolio en si sea sea una pequeña parte de un contexto global de app, me da la opcion de mostrar un portafolio tradicional, pero con la funcionalidad de ir un poco mas profundo. Si apretas el boton "tal" habilita una seccion que va mas en lo profundo de mis estudios y trabajo.
+
+Esta seccion tendrà funcionalidades de mostrar en pantalla un proyecto x en su ultima version, con la posibilidad de poder visualizar versiones anteriores. Esto no solo me servirà para practicar versionado, sino que tambien para que puedan acceder mas en detalle a la evolucion de mis conocimientos aplicados.
+
+Otra idea importante es que en esta app debo ir aplicando los conocimientos adquiridos en todo el proyecto en si, queriendo decir, por ejemplo, que si aprendo React, debo actualizar el proyecto entero a React, dejando en el "historial" o version de dichos proyectos afectados, y sin olvidarse de guardar copia del estado pasado de la aplicacion, dando la posibilidad de que se pueda mostrar el codigo tal cual fue escrito en ese momento, pero hecho con codigo nuevo, en este caso React. de esta forma, los proyectos afectados, en su version 0.0.1 (por ej) mostraran un trabajo x escrito en html, css y javascript, y su version 0.0.2 estara hecho en React, 
+
+Todo esto me va a ayudar a no solo ir aplicando los conocimientos adquiridos, sino tambien a tener mas constancia en codeo y mantenimiento, haciendo me amigo de git y github.
