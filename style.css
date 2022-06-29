@@ -180,6 +180,7 @@ ul {
 #title-izquierdo {
     background-color: white;
     color: #ff61e1;
+    text-align: end;
 }
 
 #individualProjectsCont {
@@ -195,7 +196,22 @@ ul {
     width: 250px;
     height: 250px;
     background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 5px;
 
+}
+.project-tile hr{
+    color: white;
+    border: 1px solid;
+    width: 300px;
+}
+.project-tile hr p {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 #principalView{
     width: 400px;
@@ -246,6 +262,9 @@ ul {
     color: #0a66c2;
     font-size: 18px;
 }
+#linkedin:hover {
+    background-color: hsla(210, 90%, 40%, 0.2);
+}
 #github{
     width: 300px;/*#0a66c2*/
     justify-content: center;
@@ -265,6 +284,9 @@ ul {
 #github a {
     color: black;
 }
+#github:hover {
+    background-color: hsla(215, 21%, 11%, 0.2);
+}
 #instagram {
     width: 300px;
     justify-content: center;
@@ -283,6 +305,9 @@ ul {
 #instagram a {
     color: black;
 }
+#instagram:hover{
+    background-color: hsla(300, 76%, 72%, 0.2);
+}
 #messirve {
     width: 300px;
     justify-content: center;
@@ -300,6 +325,9 @@ ul {
 }
 #messirve a {
     color: black;
+}
+#messirve:hover {
+    background-color: hsla(213, 79%, 50%, 0.2);
 }
 
 #contact-banner {
@@ -392,8 +420,14 @@ ul {
     background-color: white;
     margin: 5px;
 }
+.botoncito:hover {
+    background-color: gray;
+}
 #barra-espaciadora {
     height: 35px;
     width: 98px;
     background-color: salmon;
+}
+#barra-espaciadora:hover {
+    background-color:mediumseagreen;
 }
