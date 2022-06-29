@@ -229,7 +229,7 @@ ul {
 
 }
 #linkedin {
-    width: 300px;/*#0a66c2*/
+    width: 300px;
     justify-content: center;
     color: black;
     border: 2px solid #0a66c2;
@@ -239,8 +239,12 @@ ul {
     padding-top: 5px;
     box-sizing: border-box; 
 }
+#linkedin a {
+    color: black;
+}
 #linkedin span {
     color: #0a66c2;
+    font-size: 18px;
 }
 #github{
     width: 300px;/*#0a66c2*/
@@ -256,6 +260,10 @@ ul {
 #github span {
     background-color: #161b22;
     color: white;
+    font-size: 18px;
+}
+#github a {
+    color: black;
 }
 #instagram {
     width: 300px;
@@ -270,6 +278,10 @@ ul {
 }
 #instagram span {
     color: violet;
+    font-size: 18px;
+}
+#instagram a {
+    color: black;
 }
 #messirve {
     width: 300px;
@@ -284,6 +296,10 @@ ul {
 }
 #messirve span{
     color: #1b74e4; /*161b22*/
+    font-size: 18px;
+}
+#messirve a {
+    color: black;
 }
 
 #contact-banner {
