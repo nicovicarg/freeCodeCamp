@@ -1,0 +1,32 @@
+#navbar {
+  position:sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  margin: 0;
+  background-color: #67dde0;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Roboto, sans-serif;
+  color: white;
+}
+
+ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+}
+ul li{
+  width: fit-content;
+  padding: 0 20px 0 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

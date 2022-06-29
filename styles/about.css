@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+  padding:0px;
+}
+#welcome-section {
+  background-color: white;
+  height: 556px;
+  display: flex;
+  align-items: center;   
+  justify-content: center;
+  /*background-image:url(./img/fondodatos.png);*/
+  font-size: 40px;
+}
+.span {
+  color: #ff61e1;
+  font-weight: 800;
+}
+#welcome-msg {
+  text-align: center;
+  font-weight: 100;
+  margin: 40px 0px;
+}
+#welcome-msg p{
+  color: #67dde0;
+  font-weight: 100;
+}
+
+hr {
+  color: #ff61e1;
+  border: 2px solid;
+}

@@ -5,77 +5,7 @@
 html{
     background-color: aqua;
 }
-#navbar {
-    position:sticky;
-    top: 0;
-    left: 0;
-    display: flex;
-    margin: 0;
-    background-color: #67dde0;
-    width: 100%;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: Roboto, sans-serif;
-    color: white;
-}
 
-ul{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: flex-end;
-}
-ul li{
-    width: fit-content;
-    padding: 0 20px 0 20px;
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-
-/* body */
-
-body {
-    margin: 0px;
-    padding:0px;
-}
-#welcome-section {
-    background-color: white;
-    height: 556px;
-    display: flex;
-    align-items: center;   
-    justify-content: center;
-    /*background-image:url(./img/fondodatos.png);*/
-    font-size: 40px;
-}
-.span {
-    color: #ff61e1;
-    font-weight: 800;
-}
-#welcome-msg {
-    text-align: center;
-    font-weight: 100;
-    margin: 40px 0px;
-}
-#welcome-msg p{
-    color: #67dde0;
-    font-weight: 100;
-}
-
-#robot {
-    margin-top: 116px;
-}
-
-hr {
-    color: #ff61e1;
-    border: 2px solid;
-    
-}
 
 #education {
     width: 100%;
