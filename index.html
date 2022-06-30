@@ -4,149 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="./styles/about.css">
-    <link rel="stylesheet" type="text/css" href="./styles/education.css">
-    <link rel="stylesheet" type="text/css" href="./styles/otherProjects.css">
-    <link rel="stylesheet" type="text/css" href="./styles/contact.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#welcome-section">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#otherProjects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="welcome-section">
-            <div id="welcome-msg">
-                <hr>
-                <h1>Hi! i'm <span class="span">Nicolas</span> and <span class="span">Front End</span> developer.</h1>
-                <p>Nice to meet you!</p>
-                <hr>
-            </div>
-            <div id="robot">
-                <img src="/portfolio/img/pngwing.com.png" alt="">
-            </div>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <div class="courses" id="course1">
+    <div id="contenedor-nav">
+        <div id="navbar">
+            <ul>
+                <li>index 1</li>
+                <li>index 2</li>
+                <li>index 3</li>
+                <li>index 4</li>
+            </ul>
+            <div id="otros-datos"></div>
+            <hr id="hr">
+        </div>
+    </div>   
+    <div id="pantalla-celular">    
+        
+        <div id="contenedor-1">
 
-                <header> 
-                    Responsive Web Design
-                </header>
-
-                <div class="contents" id="divc1">
-                    
-                        <p>Basic HTML and HTML5</p>
-                        <p>Basic CSS</p>
-                        <p>Applied Visual Design</p>
-                        <p>Applied Accessibility</p>
-                        <p>Responsive Web Design Principles</p>
-                        <p>CSS Flexbox</p>
-                        <p>CSS Grid</p>
-                      
-                </div>
-
-                <div class="screens" id="screen1">
-                    Here goes projects...
-                    <div id="project1-title">
-                        <hr>
-                        <p>Project Title</p>
-                        <hr>
-                    </div>
-                </div>
-
-            </div>
-            <div class="courses" id="course2">
-                <header>
-                    JavaScript Algorithms and Data Structures
-                </header>
-
-                <div class="contents" id="divc1">
-                    
-                    <p>Basic JavaScript</p>
-                    <p>ES6</p>
-                    <p>Regular Expressions</p>
-                    <p>Debugging</p>
-                    <p>Basic Data Structures</p>
-                    <p>Basic Algorithm Scripting</p>
-                    <p>Object Oriented Programming</p>
-                    <p>Functional Programming</p>
-                    <p>Intermediate Algorithm Scripting</p>
-                
-                </div>    
-                <div class="screens" id="screen1">
-                    Here goes projects...
-                    <div id="project1-title">
-                        <hr>
-                        <p>Project Title</p>
-                        <hr>
-                    </div>
-                </div>
+            <div id="contenedor-mensaje">
+                <div id="mensaje"></div>
+                <p>enviado a las x hs...</p>
             </div>
 
-            
+            <div class="usuario"></div>
+        </div>
+        <div id="contenedor-1">
+            <div id="contenedor-mensaje">
+                <div id="mensaje"></div>
+                <p>enviado a las x hs...</p>
             </div>
-            <div class="courses" id="course3">
-                In progress..
+
+            <div class="usuario"></div>
+        </div>
+        <div id="contenedor-1">
+            <div id="contenedor-mensaje">
+                <div id="mensaje"></div>
+                <p>enviado a las x hs...</p>
             </div>
-        </section>
-        <section id="otherProjects">
-            <div id="title-container">
-                <div id="div-x">
-                <div id="title-izquierdo">
-                    <p>O</p>
-                    <p>P</p>
-                </div>
-                <div id="title-derecho">
-                    <p>ther</p>
-                    <p>rojects</p>
-                </div>
+            <div class="usuario"></div>
+        </div>
+        <hr>
+       <div id="footer">
+        <div id="redes">
+            <div class="redes"><img src="./img/li.png" alt=""></div>
+            <div class="redes">
+                <img src="./img/github_logo_icon_143772.png" alt="">
             </div>
-            </div>
-            <div id="individualProjectsCont">
-                <div class="project-tile"></div>
-                <button> < </button>
-                <div class="project-tile" id="principalView"><hr><p>Project Title</p><hr></div>
-                <button> > </button>
-                <div class="project-tile"></div>
-            </div>
-        </section>
-        <section id="contact">
-            <div id="contact-banner"><hr><p>C</p><p>o</p><p>n</p><p>t</p><p>a</p><p>c</p><p>t</p><hr></div>
-            <form action="" id="form">
-                <header>E-mail me...</header>
-                <div id="input-container">
-                    <input type="email" class="form-input" placeholder="E-mail">
-                    <input type="text" class="form-input" placeholder="Issue">
-                    <input type="text" class="form-input" id="input-mensaje" placeholder="Mesagge">
-                    <button>Enviar</button>
-                </div>
-            </form>
-            <div id="net">
-                <div id="pantalla">
-                    <p id="linkedin"><a href="https://www.linkedin.com/in/nicovicarg/">Placeatnt fuga <span>LinkedIn</span> doloremque voluptatibus eaque eveniet?</a></p>
-                    <p id="github"><a href="https://github.com/nicovicarg">Eligendi <span>Github</span> magnam, aperiam dicta repellat labore dolorum fugiat error</a></p>
-                    <p id="instagram"><a href="https://www.instagram.com/nikov91/">Ex dolor adipisci assumenda nesciunt <span>Instagram</span> laudantium?</a></p>
-                    <p id="messirve"><a href="https://www.facebook.com/NicovicArg">Lorem ipsum dolor sit amet <span>Facebook</span> consectetur adipisicing</a></p>
-                </div> 
-                <div id="teclado">
-                    <div id="primera-linea"><div class="botoncito"></div><div class="botoncito"></div><div class="botoncito"></div><div class="botoncito"></div></div>
-                    <div id="segunda-linea"><div class="botoncito"></div><div class="botoncito"></div><div class="botoncito"></div></div>
-                    <div id="tercera-linea"><div class="botoncito"></div><div class="botoncito"></div><div class="botoncito"></div><div class="botoncito"></div></div>
-                    <div id="barra-espaciadora"></div>
-                </div>   
-            </div>
-        </section>
-        <footer>
-            Created by: Nicolas Vicente. Front end developer
-        </footer>
-    </main>
+            <div class="redes"><img src="./img/instagram-round-icon-png-23.jpg" alt=""></div>
+            <div class="redes"><img src="./img/1024px-Facebook_icon_(black).svg.png" alt=""></div>
+        </div>
+        <hr>
+        <div id="contact"><img id="call-button"src="./img/download.png" alt="call-button"></div>
+        
+    </div>
+       </div>
+        
+
 </body>
 </html>
