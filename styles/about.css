@@ -1,11 +1,22 @@
 #about {
-  color: white;
-  
-  height: 566px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px red;
 }
-#welcome-msg {
-  width: 80%;
-  height: 566px;
-  background-color: hsl(211, 16%, 64%, 0.8);
-  border-radius: 32px;
+#mensaje-about {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+}
+.msg-container {
+  padding: 10px;
+}
+.nico {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
