@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/certification.css">
     <link rel="stylesheet" href="./styles/technologies.css">
     <title>Document</title>
+    
 </head>
 <body>
     <div id="contenedor-nav">
@@ -23,7 +24,6 @@
                 <li>index 4</li>
             </ul>
             <div id="otros-datos"></div>
-            <hr id="hr">
         </div>
     </div>   
    
@@ -77,24 +77,45 @@
         </div>
         
         <div id="technologies">
-            <div class="msg-technologies">
-                <div id="mensaje-technologies">
-                    <p id="mt-msg">...and technologies i've been working with:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavasCript</li>
-                    </ul>
+            <div id="about">
+                <div class="msg-projects">
+    
+                    <div id="mensaje-projects">
+                        <p id="mp-msg">technologies i've been working with:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <p id="sent-time-projects">sent at 15:55 &#10003&#10003</p>
                 </div>
-                <p id="sent-time-technologies">sent at 15:55 &#10003&#10003</p>
+    
+                <div class="contenedor-nico">
+                    <img id="nico-projects" src="./img/nico.jpg" alt="">
+                </div>
+    
             </div>
-            <div class="contenedor-nico">
-                <img id="nico-technologies" src="./img/nico.jpg" alt="">
+        </div>
+        <div id="technologies">
+            <div id="about">
+                <div class="msg-projects">
+    
+                    <div id="mensaje-projects">
+                        <p id="mp-msg">You can find contact section below. <br> Hope to see you soon!</p>
+                    </div>
+                    <p id="sent-time-projects">sent at 15:55 &#10003&#10003</p>
+                </div>
+    
+                <div class="contenedor-nico">
+                    <img id="nico-projects" src="./img/nico.jpg" alt="">
+                </div>
+    
             </div>
         </div>
     </div>
 
-    <!--<div id="footer">
+    <footer id="footer">
         <div id="redes">
             <div class="redes"><img src="./img/li.png" alt=""></div>
             <div class="redes">
@@ -108,7 +129,21 @@
             <img id="call-button"src="./img/download.png" alt="call-button">
         </div>
     
-    </div>   --> 
+    </footer>  
+    <script>
+        const navegador = document.getElementById("about");
+        const projects = document.getElementById("projects");
+        const certification = document.getElementById("certification")
 
+        setTimeout(function(){
+            navegador.style = "display: flex";
+        }, 2000)
+        setTimeout(function(){
+            projects.style = "display: flex";
+        }, 4000)
+        setTimeout(function(){
+            certification.style = "display: flex";
+        }, 6000)
+    </script>
 </body>
 </html>

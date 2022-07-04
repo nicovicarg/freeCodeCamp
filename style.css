@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 922px;
     padding-bottom:20px; 
-    
+    box-sizing: border-box;
 }
 #pantalla-celular {
     min-height: 700px;
