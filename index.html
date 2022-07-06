@@ -29,10 +29,10 @@
 
         <div class="contenedor-mensaje">
             <div class="mensaje">
-                <p class="texto">Me llamo tal tal y soy tal tal</p>
+                <p class="texto">Hola! Me llamo Nicolas y soy Desarrollador Front End</p>
             </div>
             <div class="sent-time">
-                <p>sent 22:48</p>
+                <p>sent 22:48 &#10003&#10003</p>
             </div>
         </div>
 
@@ -48,10 +48,13 @@
 
         <div class="contenedor-mensaje">
             <div class="mensaje">
-                <p class="texto">Estas son mis certificaciones</p>
+                <p class="texto padding-texto">Estos son mis certificados</p>
+                <div class="contenedor-alinear">
+                    <img src="./img/Certification.png" alt="" id="certificacion">
+                </div>
             </div>
             <div class="sent-time">
-                <p>sent 22:48</p>
+                <p>sent 22:48 &#10003&#10003</p>
             </div>
         </div>
 
@@ -67,10 +70,11 @@
 
         <div class="contenedor-mensaje">
             <div class="mensaje">
-                <p class="texto">Algunos de mis proyectos</p>
+                <p class="texto padding-texto">Por acá puedes ver algunos de mis proyectos:</p>
+                <div class="contenedor-alinear"><img src="./img/tributePage.png" alt="" id="proyectos"></div>
             </div>
             <div class="sent-time">
-                <p>sent 22:48</p>
+                <p>sent 22:48 &#10003&#10003</p>
             </div>
         </div>
 
@@ -86,10 +90,10 @@
 
         <div class="contenedor-mensaje">
             <div class="mensaje">
-                <p class="texto">Tecnologias con las que trabajo</p>
+                <p class="texto">Y las tecnologías con las que trabajo:</p>
             </div>
             <div class="sent-time">
-                <p>sent 22:48</p>
+                <p>sent 22:48 &#10003&#10003</p>
             </div>
         </div>
 
@@ -105,10 +109,10 @@
 
         <div class="contenedor-mensaje">
             <div class="mensaje">
-                <p class="texto">Espero que haya sido de su agrado. Debajo pueden encontrar enlaces de contacto y redes</p>
+                <p class="texto">Espero que haya sido de su agrado. Debajo puede encontrar enlaces de contacto y redes</p>
             </div>
             <div class="sent-time">
-                <p>sent 22:48</p>
+                <p>sent 22:48 &#10003&#10003</p>
             </div>
         </div>
 
@@ -118,5 +122,45 @@
 
     </div>
     
+    <!-- Zona de Contacto-->
+
+    <div id="contacto">
+        <hr>
+        <div id="redes">
+            <div class="fondo-icono"><img src="./img/li.png" alt="" class="redes"></div>
+            <div class="fondo-icono"><img src="./img/github.png" alt="" class="redes"></div>
+            <img src="./img/faceb.png" alt="" class="redes">
+            <div class="fondo-icono"><img src="./img/instagram.jpg" alt="" class="redes"></div>
+        </div>
+        <hr>
+
+        <div id="correo">
+            <img src="./img/e-mail.png" alt="" id="e-mail">
+            <form action="" id="form">
+                <input type="email" class="input" placeholder="E-mail">
+                <input type="text" class="input" placeholder="Asunto">
+                <input type="text" class="input" id="campo-de-texto">
+                <button id="button">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const button = document.getElementById("e-mail");
+        let body = document.querySelector("body")
+            let form = document.getElementsById("form");
+            let input = document.getElementsByClassName("input")
+            let btn = document.getElementsById("button")
+            
+        function mostrarCorreo (){
+            
+            
+            form.style = "display:flex";
+            input.style = "display:flex";
+            btn.style = "display:flex";
+            body.style = "background-color:blue";
+        }
+
+        button.onclick
+    </script>
 </body>
 </html>
