@@ -71,7 +71,12 @@
         <div class="contenedor-mensaje">
             <div class="mensaje">
                 <p class="texto padding-texto">Por acá puedes ver algunos de mis proyectos:</p>
-                <div class="contenedor-alinear"><img src="./img/tributePage.png" alt="" id="proyectos"></div>
+                <div class="contenedor-alinear" id="contenedor-proyectos">
+                    <p>a</p>
+                    <img src="./img/tributePage.png" alt="" class="proyectos" id="pro-1">
+                    <img src="./img/calc.png" alt="" class="proyectos" id="pro-2">
+                    <p>b</p>
+                </div>
             </div>
             <div class="sent-time">
                 <p>sent 22:48 &#10003&#10003</p>
@@ -135,32 +140,49 @@
         <hr>
 
         <div id="correo">
-            <img src="./img/e-mail.png" alt="" id="e-mail">
+            <a href="#form"><img src="./img/e-mail.png" alt="" id="e-mail"></a>
             <form action="" id="form">
-                <input type="email" class="input" placeholder="E-mail">
-                <input type="text" class="input" placeholder="Asunto">
-                <input type="text" class="input" id="campo-de-texto">
+                <input type="email" class="input" placeholder="E-mail" id="input1">
+                <input type="text" class="input" placeholder="Asunto" id="input2">
+                <!--<input type="text" class="input" id="campo-de-texto">-->
+                <textarea name="" id="textarea" ></textarea>
                 <button id="button">Enviar</button>
             </form>
         </div>
     </div>
+    
     <script>
-        const button = document.getElementById("e-mail");
-        let body = document.querySelector("body")
-            let form = document.getElementsById("form");
-            let input = document.getElementsByClassName("input")
-            let btn = document.getElementsById("button")
-            
-        function mostrarCorreo (){
-            
-            
-            form.style = "display:flex";
-            input.style = "display:flex";
-            btn.style = "display:flex";
-            body.style = "background-color:blue";
+        const btn = document.getElementById("e-mail");
+        const button = document.getElementById("button")
+        const element = document.getElementById("form");
+        const element1_1 = document.getElementById("input1");
+        const element1_2 = document.getElementById("input2");
+        const element1_3 = document.getElementById("textarea");
+        const element2 = document.getElementById("button");
+        const pro1 = document.getElementById("pro-1")
+        const pro2 = document.getElementById("pro-2")
+        const contProyectos = document.getElementById("contenedor-proyectos")
+        
+        function changeColor() {   
+            element.style = "display:flex";
+            element1_1.style = "display:block";
+            element1_2.style = "display:block";
+            element1_3.style = "display:block";
+            element2.style = "display:block";
         }
+        function closeEmail (){
+            element.style = "display:none";
+            element1_1.style = "display:none";
+            element1_2.style = "display:none";
+            element1_3.style = "display:none";
+            element2.style = "display:none";
+            alert("enviado");
+        }
+        
 
-        button.onclick
+        
+        btn.onclick = changeColor;
+        button.onclick = closeEmail;
     </script>
 </body>
 </html>

@@ -87,16 +87,28 @@ ul li {
 /* Imagenes proyectos y certificaciones */
 .contenedor-alinear {
     display: flex;
+    flex-direction: row; 
     justify-content: center;
+    align-items: center;
 }
+#contenedor-proyectos p{
+    padding: 5px;
+    border: 1px solid black;
+    background-color: red;
+}
+
 #certificacion {
     width: 300px;
     height: 300px;
 }
 
-#proyectos {
-    width: 300px;
+.proyectos {
+    width: 100%;
     height: 300px;
+}
+
+#pro-2 {
+    display: none;
 }
 
 /* padding texto de foto*/
@@ -156,9 +168,11 @@ form button {
     font-size: 20px;
     font-weight: 700;
 }
-
-.input {
+#input1 {
     display: none;
+}
+.input {
+
     width: 70%;
     height: 50px;
     margin-top: 10px;
@@ -168,11 +182,19 @@ form button {
 }
 
 #button {
-    display: none;
+    
 }
 
 #campo-de-texto {
     height: 300px;
+    display: flex;
+    
+}
+
+textarea {
+    width: 70%;
+    height: 300px;
+    margin-top: 10px
 }
 
 
