@@ -5,145 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/contact.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/projects.css">
-    <link rel="stylesheet" href="./styles/certification.css">
-    <link rel="stylesheet" href="./styles/technologies.css">
+   
     <title>Document</title>
     
 </head>
 <body>
-    <div id="contenedor-nav">
-        <div id="navbar">
-            <ul>
-                <li>index 1</li>
-                <li>index 2</li>
-                <li>index 3</li>
-                <li>index 4</li>
-            </ul>
-            <div id="otros-datos"></div>
-        </div>
-    </div>   
-   
-    <div id="pantalla-celular">    
-        <div id="about">
-            <div class="msg-projects">
 
-                <div id="mensaje-projects">
-                    <p id="mp-msg">Hi! I'm Nicolas, Web Front End Developer.<br>Welcome to my Portfolio!</p>
-                    
-                </div>
-                <p id="sent-time-projects">sent at 15:55 &#10003&#10003</p>
+    <!-- Barra navegadora-->
+
+    <nav id="navbar">
+        <ul>
+            <li>index 1</li>
+            <li>index 2</li>
+            <li>index 3</li>
+            <li>index 4</li>
+        </ul>
+        <div id="otros-datos">22:29</div>
+    </nav>
+      
+    <!-- Primer Mensaje / Saludo-->
+
+    <div class="contenedor-principal">
+
+        <div class="contenedor-mensaje">
+            <div class="mensaje">
+                <p class="texto">Me llamo tal tal y soy tal tal</p>
             </div>
-
-            <div class="contenedor-nico">
-                <img id="nico-projects" src="./img/nico.jpg" alt="">
-            </div>
-
-        </div>
-
-        <div id="projects">
-            <div class="msg-projects">
-
-                <div id="mensaje-projects">
-                    <p id="mp-msg">These are some of my projects:</p>
-                    <img id="project-one" src="./img/random-quote-machine.png" alt="">
-                </div>
-                <p id="sent-time-projects">sent at 15:55 &#10003&#10003</p>
-            </div>
-
-            <div class="contenedor-nico">
-                <img id="nico-projects" src="./img/nico.jpg" alt="">
-            </div>
-
-        </div>
-
-        <div id="certification">
-            <div id="msg-certification">
-
-                <div id="mensaje-certification">
-                    <p id="mc-msg">And some of my certifications:</p>
-                    <img id="freeCodeCamp" src="./img/Certification.png" alt="">
-                </div>
-                <p id="sent-time-certification">sent at 15:55 &#10003&#10003</p>
-            </div>
-
-            <div class="contenedor-nico">
-                <img id="nico-certification" src="./img/nico.jpg" alt="">
-            </div>
-
-        </div>
-        
-        <div id="technologies">
-            <div id="about">
-                <div class="msg-projects">
-    
-                    <div id="mensaje-projects">
-                        <p id="mp-msg">technologies i've been working with:</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                    <p id="sent-time-projects">sent at 15:55 &#10003&#10003</p>
-                </div>
-    
-                <div class="contenedor-nico">
-                    <img id="nico-projects" src="./img/nico.jpg" alt="">
-                </div>
-    
+            <div class="sent-time">
+                <p>sent 22:48</p>
             </div>
         </div>
-        <div id="technologies">
-            <div id="about">
-                <div class="msg-projects">
-    
-                    <div id="mensaje-projects">
-                        <p id="mp-msg">You can find contact section below. <br> Hope to see you soon!</p>
-                    </div>
-                    <p id="sent-time-projects">sent at 15:55 &#10003&#10003</p>
-                </div>
-    
-                <div class="contenedor-nico">
-                    <img id="nico-projects" src="./img/nico.jpg" alt="">
-                </div>
-    
-            </div>
+
+        <div class="contenedor-foto">
+            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
         </div>
+
     </div>
 
-    <footer id="footer">
-        <div id="redes">
-            <div class="redes"><img src="./img/li.png" alt=""></div>
-            <div class="redes">
-                <img src="./img/github_logo_icon_143772.png" alt="">
-            </div>
-            <div class="redes"><img src="./img/instagram-round-icon-png-23.jpg" alt=""></div>
-            <div class="redes"><img src="./img/1024px-Facebook_icon_(black).svg.png" alt=""></div>
-        </div>
-        <hr>
-        <div id="contact">
-            <img id="call-button"src="./img/download.png" alt="call-button">
-        </div>
-    
-    </footer>  
-    <script>
-        const navegador = document.getElementById("about");
-        const projects = document.getElementById("projects");
-        const certification = document.getElementById("certification")
+    <!-- Segundo Mensaje / certificaciones-->
 
-        setTimeout(function(){
-            navegador.style = "display: flex";
-        }, 2000)
-        setTimeout(function(){
-            projects.style = "display: flex";
-        }, 4000)
-        setTimeout(function(){
-            certification.style = "display: flex";
-        }, 6000)
-    </script>
+    <div class="contenedor-principal">
+
+        <div class="contenedor-mensaje">
+            <div class="mensaje">
+                <p class="texto">Estas son mis certificaciones</p>
+            </div>
+            <div class="sent-time">
+                <p>sent 22:48</p>
+            </div>
+        </div>
+
+        <div class="contenedor-foto">
+            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
+        </div>
+
+    </div>
+
+    <!-- Tercer Mensaje / Proyectos-->
+
+    <div class="contenedor-principal">
+
+        <div class="contenedor-mensaje">
+            <div class="mensaje">
+                <p class="texto">Algunos de mis proyectos</p>
+            </div>
+            <div class="sent-time">
+                <p>sent 22:48</p>
+            </div>
+        </div>
+
+        <div class="contenedor-foto">
+            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
+        </div>
+
+    </div>
+
+    <!-- Cuarto Mensaje / Tecnologias-->
+
+    <div class="contenedor-principal">
+
+        <div class="contenedor-mensaje">
+            <div class="mensaje">
+                <p class="texto">Tecnologias con las que trabajo</p>
+            </div>
+            <div class="sent-time">
+                <p>sent 22:48</p>
+            </div>
+        </div>
+
+        <div class="contenedor-foto">
+            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
+        </div>
+
+    </div>
+
+    <!-- Quinto Mensaje / Despedida-->
+
+    <div class="contenedor-principal">
+
+        <div class="contenedor-mensaje">
+            <div class="mensaje">
+                <p class="texto">Espero que haya sido de su agrado. Debajo pueden encontrar enlaces de contacto y redes</p>
+            </div>
+            <div class="sent-time">
+                <p>sent 22:48</p>
+            </div>
+        </div>
+
+        <div class="contenedor-foto">
+            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
+        </div>
+
+    </div>
+    
 </body>
 </html>
