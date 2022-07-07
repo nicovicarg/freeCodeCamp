@@ -131,4 +131,27 @@
     display: flex;
     flex-direction: column;
   }
+
+  /* Seccion de contacto */
+
+  #redes {
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+  }
+  .fondo-icono {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 20px 0;
+  }
+  .redes {
+    width: 200px;
+    height: 200px;
+
+  }
 }  
