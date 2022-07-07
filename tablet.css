@@ -81,6 +81,26 @@
     font-size: 110px;
   }
   
+  /* Seccion de proyectos */
+  #proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contenedor_proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foto_proyectos {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+  }
+
   /*Skills Icons*/
   .skill-icon {
     width: 200px;
@@ -104,5 +124,11 @@
 
   #div-superior {
     margin-bottom: 50px;
+  }
+
+/* Seccion de certificados  */
+  #certificados {
+    display: flex;
+    flex-direction: column;
   }
 }  
