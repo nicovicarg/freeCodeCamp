@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-   
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./tablet.css">
     <title>Document</title>
+    
+        
     
 </head>
 <body>
@@ -15,174 +17,76 @@
 
     <nav id="navbar">
         <ul>
-            <li>index 1</li>
-            <li>index 2</li>
-            <li>index 3</li>
-            <li>index 4</li>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#asdf">Skills</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#certificados">Certificados</a></li>
+            <li><a href="#cv">Cv</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li id="lang">español</li>
         </ul>
-        <div id="otros-datos">22:29</div>
+        <div id="hora"></div>
     </nav>
       
     <!-- Primer Mensaje / Saludo-->
-
-    <div class="contenedor-principal">
-
-        <div class="contenedor-mensaje">
-            <div class="mensaje">
-                <p class="texto">Hola! Me llamo Nicolas y soy Desarrollador Front End</p>
-            </div>
-            <div class="sent-time">
-                <p>sent 22:48 &#10003&#10003</p>
-            </div>
+    <main id="main">
+        <div class="contenedor dos" id="asd">
+            <p>Hola! <span>Nicolás</span> es mi nombre. </p>
+            <p> Desarrollador <span>Front End</span></p>
         </div>
-
-        <div class="contenedor-foto">
-            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
-        </div>
-
-    </div>
-
-    <!-- Segundo Mensaje / certificaciones-->
-
-    <div class="contenedor-principal">
-
-        <div class="contenedor-mensaje">
-            <div class="mensaje">
-                <p class="texto padding-texto">Estos son mis certificados</p>
-                <div class="contenedor-alinear">
-                    <img src="./img/Certification.png" alt="" id="certificacion">
-                </div>
-            </div>
-            <div class="sent-time">
-                <p>sent 22:48 &#10003&#10003</p>
-            </div>
-        </div>
-
-        <div class="contenedor-foto">
-            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
-        </div>
-
-    </div>
-
-    <!-- Tercer Mensaje / Proyectos-->
-
-    <div class="contenedor-principal">
-
-        <div class="contenedor-mensaje">
-            <div class="mensaje">
-                <p class="texto padding-texto">Por acá puedes ver algunos de mis proyectos:</p>
-                <div class="contenedor-alinear" id="contenedor-proyectos">
-                    <p>a</p>
-                    <img src="./img/tributePage.png" alt="" class="proyectos" id="pro-1">
-                    <img src="./img/calc.png" alt="" class="proyectos" id="pro-2">
-                    <p>b</p>
-                </div>
-            </div>
-            <div class="sent-time">
-                <p>sent 22:48 &#10003&#10003</p>
-            </div>
-        </div>
-
-        <div class="contenedor-foto">
-            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
-        </div>
-
-    </div>
-
-    <!-- Cuarto Mensaje / Tecnologias-->
-
-    <div class="contenedor-principal">
-
-        <div class="contenedor-mensaje">
-            <div class="mensaje">
-                <p class="texto">Y las tecnologías con las que trabajo:</p>
-            </div>
-            <div class="sent-time">
-                <p>sent 22:48 &#10003&#10003</p>
-            </div>
-        </div>
-
-        <div class="contenedor-foto">
-            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
-        </div>
-
-    </div>
-
-    <!-- Quinto Mensaje / Despedida-->
-
-    <div class="contenedor-principal">
-
-        <div class="contenedor-mensaje">
-            <div class="mensaje">
-                <p class="texto">Espero que haya sido de su agrado. Debajo puede encontrar enlaces de contacto y redes</p>
-            </div>
-            <div class="sent-time">
-                <p>sent 22:48 &#10003&#10003</p>
-            </div>
-        </div>
-
-        <div class="contenedor-foto">
-            <img src="./img/nico.jpg" alt="foto-nico" class="foto">
-        </div>
-
-    </div>
+        
     
-    <!-- Zona de Contacto-->
-
-    <div id="contacto">
-        <hr>
-        <div id="redes">
-            <div class="fondo-icono"><img src="./img/li.png" alt="" class="redes"></div>
-            <div class="fondo-icono"><img src="./img/github.png" alt="" class="redes"></div>
-            <img src="./img/faceb.png" alt="" class="redes">
-            <div class="fondo-icono"><img src="./img/instagram.jpg" alt="" class="redes"></div>
-        </div>
-        <hr>
-
-        <div id="correo">
-            <a href="#form"><img src="./img/e-mail.png" alt="" id="e-mail"></a>
-            <form action="" id="form">
-                <input type="email" class="input" placeholder="E-mail" id="input1">
-                <input type="text" class="input" placeholder="Asunto" id="input2">
-                <!--<input type="text" class="input" id="campo-de-texto">-->
-                <textarea name="" id="textarea" ></textarea>
-                <button id="button">Enviar</button>
-            </form>
-        </div>
-    </div>
+        <!-- Segundo Mensaje / Skills-->
     
-    <script>
-        const btn = document.getElementById("e-mail");
-        const button = document.getElementById("button")
-        const element = document.getElementById("form");
-        const element1_1 = document.getElementById("input1");
-        const element1_2 = document.getElementById("input2");
-        const element1_3 = document.getElementById("textarea");
-        const element2 = document.getElementById("button");
-        const pro1 = document.getElementById("pro-1")
-        const pro2 = document.getElementById("pro-2")
-        const contProyectos = document.getElementById("contenedor-proyectos")
-        
-        function changeColor() {   
-            element.style = "display:flex";
-            element1_1.style = "display:block";
-            element1_2.style = "display:block";
-            element1_3.style = "display:block";
-            element2.style = "display:block";
-        }
-        function closeEmail (){
-            element.style = "display:none";
-            element1_1.style = "display:none";
-            element1_2.style = "display:none";
-            element1_3.style = "display:none";
-            element2.style = "display:none";
-            alert("enviado");
-        }
-        
+        <div class="contenedor uno" id="asdf">
+            <p>Skills / Tools:</p>
+            <div id="div-superior" class="div-skill">
+                <img src="./img/html/html.png" alt="" class="skill-icon">
+                <img src="./img/css/css.png" alt="" class="skill-icon">
+            </div>
 
+            <div id="div-inferior" class="div-skill">
+                <img src="./img/js/javascript.png" alt="" class="skill-icon">
+                <img src="./img/png-transparent-microsoft-visual-studio-visual-studio-code-source-code-editor-computer-icons-coder-blue-angle-text-thumbnail.png" alt="" class="skill-icon">
+            </div>
+            
+        </div>
+    
+        <!-- Tercer Mensaje / Proyectos-->
+    
         
-        btn.onclick = changeColor;
-        button.onclick = closeEmail;
-    </script>
+        <div class="contenedor dos" id="proyectos">
+            Proyectos
+        </div>
+           
+    
+        <!-- Cuarto Mensaje / Certificados-->
+    
+        <div class="contenedor uno" id="certificados">
+            Certificados
+        </div>
+    
+        <!-- Quinto Mensaje / cv-->
+    
+        <div class="contenedor dos" id="cv">
+            Cv
+        </div>
+        
+        <!-- Zona de Contacto-->
+    
+        <div id="contacto" id="contacto">
+            <hr>
+            <div id="redes">
+                <div class="fondo-icono"><img src="./img/li.png" alt="" class="redes"></div>
+                <div class="fondo-icono"><img src="./img/github.png" alt="" class="redes"></div>
+                <img src="./img/faceb.png" alt="" class="redes">
+                <div class="fondo-icono"><img src="./img/instagram.jpg" alt="" class="redes"></div>
+            </div>
+            <hr>
+        </div>
+    </main>   
+    
+    
+
 </body>
 </html>

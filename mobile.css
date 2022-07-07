@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    
+}
+body {
+    width: 100%;
+    padding: 0px 20px;
+    min-height: 922px; 
+    background-color: #1e1e1e;
+    box-sizing: border-box;
+}
+
+@media (max-width: 677px){
+
+    main {
+        padding: 20px;
+    }
+    /*asdasdasd*/
+
+    /*Barra Navegadora*/
+
+    #navbar {
+        width: 100%;
+        background-color: #1e1e1e;
+        color: red;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 20px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+    }
+
+    
+
+    /* Info */
+
+    .contenedor {
+        width: 100%;
+        height: 200px;
+        background-color: white;
+        border-radius: 32px;
+        margin-bottom: 20px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .dos {
+        box-shadow:-5px 5px red;
+    }
+    .uno {
+        box-shadow:-5px 5px red;
+    }
+
+    /* Zona de contacto y redes */
+    #correo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #e-mail {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+
+    #redes {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .redes {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%; 
+}
+
+    .fondo-icono {
+        background: white;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+}
