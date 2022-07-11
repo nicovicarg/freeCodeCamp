@@ -76,6 +76,10 @@
     height: 100vh;
     font-size: 80px;
     color: #233237;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Redes */
@@ -102,5 +106,11 @@
     width: 96px;
     height: 96px;
 
+  }
+
+  /*contacto*/
+
+  #contacto {
+    display: none;
   }
 }
