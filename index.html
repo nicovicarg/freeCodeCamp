@@ -18,9 +18,9 @@
 
     <nav id="navbar">
         <ul>
-            <li id="lang">español</li><br>
+            <li id="lang">Español</li><br>
             <li><a href="#main">Home</a></li>
-            <li><a href="#asdf">Skills</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#certificados">Certificados</a></li>
             <li><a href="#cv">Cv</a></li>
@@ -40,23 +40,26 @@
     <!-- Primer Mensaje / Saludo-->
     <main id="main">
         <div class="contenedor dos" id="asd">
-            <p>Hola! <span>Nicolás</span> es mi nombre. </p>
-            <p> Desarrollador <span>Front End</span></p>
+            <p>Hola! <span class="span">Nicolás</span> es mi nombre. </p>
+            <p> Desarrollador <span class="span">Front End</span></p>
         </div>
         
     
         <!-- Segundo Mensaje / Skills-->
     
-        <div class="contenedor uno" id="asdf">
-            <p>Skills / Tools:</p>
-            <div id="div-superior" class="div-skill">
-                <img src="./img/html/html.png" alt="" class="skill-icon">
-                <img src="./img/css/css.png" alt="" class="skill-icon">
-            </div>
+        <div class="contenedor uno" id="skills">
+            <p id="skills-title">Skills / Tools:</p>
 
-            <div id="div-inferior" class="div-skill">
-                <img src="./img/js/javascript.png" alt="" class="skill-icon">
-                <img src="./img/png-transparent-microsoft-visual-studio-visual-studio-code-source-code-editor-computer-icons-coder-blue-angle-text-thumbnail.png" alt="" class="skill-icon">
+            <div id="contenedor-de-skills">
+                <div id="div-superior" class="div-skill">
+                    <img src="./img/html/html.png" alt="" class="skill-icon">
+                    <img src="./img/css/css.png" alt="" class="skill-icon">
+                </div>
+    
+                <div id="div-inferior" class="div-skill">
+                    <img src="./img/js/javascript.png" alt="" class="skill-icon">
+                    <img src="./img/png-transparent-microsoft-visual-studio-visual-studio-code-source-code-editor-computer-icons-coder-blue-angle-text-thumbnail.png" alt="" class="skill-icon">
+                </div>
             </div>
             
         </div>
@@ -65,12 +68,28 @@
     
         
         <div class="contenedor dos" id="proyectos">
-            <p>Proyectos</p>
+            <p id="proyectos-title">Proyectos</p>
             <div id="contenedor_proyectos">
-                <a href="https://nicovicarg.github.io/decodificador/"><img src="./img/proyectos/codificador.png" alt="" class="foto_proyectos"></a>
-                <img src="./img/proyectos/contador.png" alt="" class="foto_proyectos">
-                <a href="https://nicovicarg.github.io/calculator/"><img src="./img/proyectos/calculadora.png" alt="" class="foto_proyectos"></a>
-                <a href="https://nicovicarg.github.io/todo-list/"><img src="./img/proyectos/todo_list.png" alt="" class="foto_proyectos"></a>
+                <a href="https://nicovicarg.github.io/decodificador/" class="foto_proyectos">
+                    <img src="./img/proyectos/codificador.png" alt="" class="foto">
+                    <p class="p-a">Codificador/Decodificador de texto</p>
+                    
+                </a>
+                <a href="" class="foto_proyectos">
+                    <img src="./img/proyectos/contador.png" alt="" class="foto">
+                    <p class="p-a">Contador de clics</p>
+                    
+                </a>
+                <a href="https://nicovicarg.github.io/calculator/" class="foto_proyectos">
+                    <img src="./img/proyectos/calculadora.png" alt="" class="foto">
+                    <p class="p-a">Canculadora</p>
+                   
+                </a>
+                <a href="https://nicovicarg.github.io/todo-list/" class="foto_proyectos">
+                    <img src="./img/proyectos/todo_list.png" alt="" class="foto">
+                    <p class="p-a">Lista de Tareas</p>
+                    
+                </a>
             </div>
             <a href="">Mostrar todo</a>
         </div>
@@ -79,8 +98,10 @@
         <!-- Cuarto Mensaje / Certificados-->
     
         <div class="contenedor uno" id="certificados">
-            <p>Certificados</p>
-            <img src="./img/Certification.png" alt="">
+            <p id="certificados-title">Certificados</p>
+            <div id="contenedor-certificados">
+                <img src="./img/Certification.png" alt="" id="cert-freeC">
+            </div>
         </div>
     
         <!-- Quinto Mensaje / cv-->
