@@ -15,29 +15,31 @@
         flex-direction: column;
     }
     h1 {
-        color: black;
+        color: white;
         text-align: center;
-        background-color: white;
+        font-size: 50px;
+        font-weight: 100;
     }
 
     h2 {
         color: white;
         text-align: center;
-        background-color: black;
+        font-size: 40px;
+        font-weight: 100;
     }
 
     main {
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
-        box-shadow:rgba(124, 214, 140, 0.3) 10px 10px 50px;
+        background-color: #233237;
         padding: 40px 20px 20px 20px;
-        
+        border-radius: 32px;
         height: 60vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        
     }
     /*asdasdasd*/
 
@@ -59,10 +61,14 @@
         height: 200px;
         background-color: rgba(35, 50, 55, 0.9);
         color: rgba(255, 255, 255, 1);
-        border-radius: 2px;
+        box-shadow: rgba(255, 255, 255, 0.6) 5px 4px 20px;
+        border-radius: 32px;
         margin-bottom: 30px;
-        padding: 20px;
-        
+        border: solid 1px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
 
@@ -81,6 +87,7 @@
 
     
 
+    
 
     /* Zona de contacto y redes */
     #correo {

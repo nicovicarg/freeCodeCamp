@@ -1,8 +1,11 @@
+
+
 @media (min-width: 1440px) {
   * {
     box-sizing: border-box;
-    
-}
+    margin: 0px;
+    padding: 0px;
+  }
   
   body {
     display: flex;
@@ -18,6 +21,11 @@
 
   }
 
+  /* esto no va en esta resolucion */
+  header {
+    display: none;
+  }
+  
   /* Barra Navegadora*/
 
   #navbar {
@@ -78,7 +86,7 @@
 
   /* Primer seccion */
 
-  #asd {
+  #saludo {
     height: 100vh;
     font-size: 80px;
     color: white;
