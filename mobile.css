@@ -15,7 +15,7 @@
         flex-direction: column;
     }
     h1 {
-        color: white;
+        color: gold;
         text-align: center;
         font-size: 50px;
         font-weight: 100;
@@ -30,10 +30,10 @@
 
     main {
         width: 100%;
-        background-color: #233237;
+        background-color: #233237;;
         padding: 40px 20px 20px 20px;
         border-radius: 32px;
-        height: 60vh;
+        height: 66vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -67,8 +67,14 @@
         border: solid 1px white;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        z-index: 0;
+    
+    }
+
+    .contenedor p {
+        color: gold;
     }
     
 
@@ -85,7 +91,16 @@
 
     /* saludo */
 
-    
+    #close-icon {
+        display: none;
+        margin-bottom: 50px;
+        color: gold;
+        position: absolute;
+        left: 92vw;
+        bottom: 56vh;
+        z-index: 2;
+        
+    }
 
     
 
@@ -123,7 +138,14 @@
         height: 80px;
     }
 
-    /*skills*/
+    
+
+
+    #readme {
+        overflow-y: scroll;
+        display: none;
+        font-size: 22px;
+    }
 
     
 }
