@@ -1,160 +1,52 @@
 @media (min-width: 678px) and (max-width: 1439px){
-  * {
-    box-sizing: border-box;
-  }
-  
 
-/* barra navegadora */
-  #navbar {
-    width: 100%;
-    height: 10vh;
-    background-color: #233237;
-    color: red;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-size: 20px;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-  }
+  /* Codigo repetido tomado de pc.css. 
+  Buscar forma de evitar repeticion de codigo*/
 
-  #redes-nav {
-    display: none;
-  }
-
-  ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  ul li {
-    list-style: none;
-    font-size: 30px;
-  }
-  #lang {
-    border: 3px solid white;
-    padding: 10px;
-    border-radius: 32px;
-  }
-  #lang:hover {
-    background-color: white;
-    color:black;
-    border: 3px solid red;
-  }
-  /* Contenido general */
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  .contenedor {
-    width: 100%;
-    height: 100vh;
-    background-color: #233237;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+  #main {
     font-size: 40px;
-    margin-bottom: 16vh;
-  }
-
-  #asd {
-    background-color: #233237;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    line-height: 80px;
-    margin-bottom: 200px;
-  }
-  #asd p{
-    font-size: 80px;
-
-  }
-  #asd span {
-    text-shadow: rgba(124, 214, 140, 0.3) 10px 10px 50px;
-    font-size: 110px;
-  }
-  
-  /* Contenedor skills */
-
-  
-
-  /* Seccion de proyectos */
-  #proyectos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #contenedor_proyectos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .foto_proyectos {
-    width: 400px;
-    height: 400px;
+    width: 90vw;
+    height: 90vh;
+    background: LightGray;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
   }
 
-  /*Skills Icons*/
-  .skill-icon {
-    width: 200px;
-    height: 200px;
-    padding: 40px;
-  }
+  /* Secciones */
 
-  #asdf {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #1e1e1e;
-  }
-
-  #asdf p {
-    font-size: 70px;
-    align-self: flex-start;
-    color: red;
-    text-shadow: 5px 5px white;
-  }
-
-  #div-superior {
-    margin-bottom: 50px;
-  }
-
-/* Seccion de certificados  */
-  #certificados {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Seccion de contacto */
-
-  #redes {
-    height: fit-content;
-    display: flex;
-    justify-content: space-around;
-  }
-  .fondo-icono {
-    background-color: white;
-    width: 198px;
-    height: 198px;
+  .secciones {
+    border-radius: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    margin: 20px 0;
+    box-shadow: rgb(168, 153, 153) 5px 5px 5px;
   }
-  .redes {
-    width: 200px;
-    height: 200px;
+   
+  #seccion-0 {
+    background: lightyellow;
+    grid-column: 1/4;
+  }
 
+  #seccion-1 {
+    background:LightSkyBlue;
+    
+    grid-column: 2/4;
   }
+  #seccion-2 {
+    background:LightSalmon;
+    grid-row: 2/3;
+    grid-column: 2/3;  
+  }
+  #seccion-3 {
+    background:PaleTurquoise;
+    grid-column: ;
+  }
+  #seccion-4{background:LightPink;}
+  #seccion-5{background:PaleGreen;}
+  
+  /* FIN DEL CODIGO REPETIDO */
 }  
