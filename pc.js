@@ -16,7 +16,7 @@ var contadorContacto = 0;
 //funcion para Readme
 //-------------------------------------
 
-
+if(screen.width >= 1340){
 function abrirReadme (){
  //agranda a readme
   if (contadorReadme == 0){
@@ -242,4 +242,6 @@ function abrirContacto(){
    }
    
  }
+
  seccion6.onclick = abrirContacto;
+}
