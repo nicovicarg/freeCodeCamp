@@ -16,49 +16,55 @@ var contadorContacto = 0;
 //funcion para Readme
 //-------------------------------------
 
-if(screen.width >= 1340){
+
 function abrirReadme (){
- //agranda a readme
-  if (contadorReadme == 0){
-    seccion1.style.background = "gold";
-    seccion1.style.gridColumn= "1/6";
+  if(screen.width >= 1340){
+    //agranda a readme
+    if (contadorReadme == 0){
+      seccion1.style.background = "gold";
+      seccion1.style.gridColumn= "1/6";
 
-  //achica a los demas
-  // skills
-    seccion2.style.gridRow = "2/4";
-    seccion2.style.gridColumn= "6/7";
+    //achica a los demas
+    // skills
+      seccion2.style.gridRow = "2/4";
+      seccion2.style.gridColumn= "6/7";
 
-  //proyectos
-    seccion3.style.gridRow = "4/8";
-    seccion3.style.gridColumn = "6/8";
+    //proyectos
+      seccion3.style.gridRow = "4/8";
+      seccion3.style.gridColumn = "6/8";
 
-  //certificados
-    seccion4.style.gridRow = "2/4";
-    seccion4.style.gridColumn= "7/8"
+    //certificados
+      seccion4.style.gridRow = "2/4";
+      seccion4.style.gridColumn= "7/8"
 
-    contadorReadme++;
+      contadorReadme++;
+    } else {
+      seccion1.style.background = "LightSkyBlue";
+      seccion1.style.gridColumn= "1/4";
+
+    //achica a los demas
+    // skills
+      seccion2.style.gridRow = "2/4";
+      seccion2.style.gridColumn= "4/6";
+
+    //proyectos
+      seccion3.style.gridRow = "4/8";
+      seccion3.style.gridColumn = "4/8";
+
+    //certificados
+      seccion4.style.gridRow = "2/4";
+      seccion4.style.gridColumn= "6/8"
+
+      contadorReadme --;
+    }
+  } else if(screen.width >= 678){
+    
   } else {
-    seccion1.style.background = "LightSkyBlue";
-    seccion1.style.gridColumn= "1/4";
-
-  //achica a los demas
-  // skills
-    seccion2.style.gridRow = "2/4";
-    seccion2.style.gridColumn= "4/6";
-
-  //proyectos
-    seccion3.style.gridRow = "4/8";
-    seccion3.style.gridColumn = "4/8";
-
-  //certificados
-    seccion4.style.gridRow = "2/4";
-    seccion4.style.gridColumn= "6/8"
-
-    contadorReadme --;
+    if(screen.width <= 677){
+      
+    }
   }
-  
 }
-
 seccion1.onclick = abrirReadme;
 
 //------------------------------
@@ -104,7 +110,7 @@ function abrirSkills (){
  seccion2.onclick = abrirSkills;
 
 //------------------------------
-//funcion para Skills
+//funcion para Certificados
 //-------------------------------------
 
  function abrirCertificados(){
@@ -146,7 +152,7 @@ function abrirSkills (){
  seccion4.onclick = abrirCertificados;
 
 //------------------------------
-//funcion para Skills
+//funcion para Proyectos
 //-------------------------------------
 
  function abrirProyectos(){
@@ -195,7 +201,14 @@ function abrirSkills (){
  }
  seccion3.onclick = abrirProyectos;
 
- //------------------------------
+//------------------------------
+//funcion para redes
+//-------------------------------------
+function abrirRedes(){
+
+}
+
+//------------------------------
 //funcion para Contacto
 //-------------------------------------
 
@@ -224,9 +237,12 @@ function abrirContacto(){
 
      contadorContacto++;
    } else {
-   //vuelve todo a la posicion original
+    //vuelve todo a la posicion original
+    // contacto
+    seccion6.style.gridRow = "6/8";
+    seccion6.style.gridColumn = "8/9";
 
-   // skills
+    // skills
      seccion2.style.gridRow = "2/4";
      seccion2.style.gridColumn= "4/6";
  
@@ -237,6 +253,10 @@ function abrirContacto(){
    //certificados
      seccion4.style.gridRow = "2/4";
      seccion4.style.gridColumn= "6/8"
+    
+    //redes
+    seccion5.style.gridRow = "2/6";
+    seccion5.style.gridColumn  = "8/9";
  
      contadorContacto --;
    }
@@ -244,4 +264,6 @@ function abrirContacto(){
  }
 
  seccion6.onclick = abrirContacto;
-}
+
+
+
