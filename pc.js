@@ -21,7 +21,6 @@ function abrirReadme (){
   if(screen.width >= 1340){
     //agranda a readme
     if (contadorReadme == 0){
-      seccion1.style.background = "gold";
       seccion1.style.gridColumn= "1/6";
 
     //achica a los demas
@@ -60,8 +59,28 @@ function abrirReadme (){
   } else if(screen.width >= 678){
     
   } else {
-    if(screen.width <= 677){
-      
+    if(screen.width <= 677 && contadorReadme === 0){
+      seccion1.style.gridRow = "2/8";
+      seccion1.style.gridColumn = "1/9"
+
+      seccion2.style.display = "none";
+      seccion3.style.display = "none";
+      seccion4.style.display = "none";
+      seccion5.style.display = "none";
+      seccion6.style.display = "none";
+
+      contadorReadme ++;
+    } else {
+      seccion1.style.gridRow = "2/4";
+      seccion1.style.gridColumn = "1/6"
+
+      seccion2.style.display = "grid";
+      seccion3.style.display = "grid";
+      seccion4.style.display = "grid";
+      seccion5.style.display = "grid";
+      seccion6.style.display = "grid";
+
+      contadorReadme --;
     }
   }
 }
@@ -73,39 +92,46 @@ seccion1.onclick = abrirReadme;
 
 function abrirSkills (){
   //agranda a skills
-   if (contadorSkills == 0){
-     seccion2.style.gridRow = "2/6";
-     seccion2.style.gridColumn= "4/7";
+  if(screen.width >= 1340){
+    if (contadorSkills == 0){
+      seccion2.style.gridRow = "2/6";
+      seccion2.style.gridColumn= "4/7";
+  
+     //achica a los demas
  
-   //achica a los demas
+     // proyectos
+      seccion3.style.gridRow = "6/8";
+      seccion3.style.gridColumn= "4/8";
+  
+     //certificados
+      seccion4.style.gridRow = "2/6";
+      seccion4.style.gridColumn= "7/8"
+  
+      contadorSkills++;
+     } else {
+     //vuelve todo a la posicion original
+ 
+     // skills
+      seccion2.style.gridRow = "2/4";
+      seccion2.style.gridColumn= "4/6";
+  
+     //proyectos
+      seccion3.style.gridRow = "4/8";
+      seccion3.style.gridColumn = "4/8";
+  
+     //certificados
+      seccion4.style.gridRow = "2/4";
+      seccion4.style.gridColumn= "6/8"
+  
+      contadorSkills --;
+    }
+  } else if (width.screen >= 678 && width.screen <= 1339){
 
-   // proyectos
-     seccion3.style.gridRow = "6/8";
-     seccion3.style.gridColumn= "4/8";
- 
-   //certificados
-     seccion4.style.gridRow = "2/6";
-     seccion4.style.gridColumn= "7/8"
- 
-     contadorSkills++;
-   } else {
-   //vuelve todo a la posicion original
-
-   // skills
-     seccion2.style.gridRow = "2/4";
-     seccion2.style.gridColumn= "4/6";
- 
-   //proyectos
-     seccion3.style.gridRow = "4/8";
-     seccion3.style.gridColumn = "4/8";
- 
-   //certificados
-     seccion4.style.gridRow = "2/4";
-     seccion4.style.gridColumn= "6/8"
- 
-     contadorSkills --;
-   }
-   
+  } else {
+    if (windows.screen <= 677){
+      
+    }
+  }
  }
  seccion2.onclick = abrirSkills;
 
